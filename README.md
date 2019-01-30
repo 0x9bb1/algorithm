@@ -1,3 +1,3 @@
 # Algorithm
-just for fun : )
+just for fun : )<br>
 青青么么哒
