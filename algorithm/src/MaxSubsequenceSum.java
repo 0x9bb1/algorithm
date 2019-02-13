@@ -2,7 +2,6 @@
  * @author zhangxin
  */
 public class MaxSubsequenceSum {
-
     /**
      * 53. 最大子序和
      * 动态规划
@@ -36,5 +35,4 @@ public class MaxSubsequenceSum {
         int result1 = new MaxSubsequenceSum().maxSubArray(nums1);
         System.out.println(result1);
     }
-
 }
