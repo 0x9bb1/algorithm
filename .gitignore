@@ -24,3 +24,4 @@ algorithm/out/production/algorithm/Rotate.class
 algorithm/out/production/algorithm/Search.class
 algorithm/out/production/algorithm/ThreeSum.class
 algorithm/out/production/algorithm/ThreeSumClosest.class
+*.class
