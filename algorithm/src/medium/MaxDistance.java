@@ -7,6 +7,8 @@ import java.util.Queue;
  * 1162. 地图分析
  * <p>
  * BFS，遍历图
+ *
+ * @author zhangnix
  */
 public class MaxDistance {
 
