@@ -47,7 +47,7 @@ public class QuickSort {
 
     public static void main(String[] args) {
         QuickSort quickSort = new QuickSort();
-        int[] arr = {3,1,8,54,2};
+        int[] arr = {3, 1, 8, 54, 2};
 
         quickSort.quickSort(arr);
         System.out.println(Arrays.toString(arr));
