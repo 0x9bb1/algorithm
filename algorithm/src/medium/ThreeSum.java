@@ -1,3 +1,5 @@
+package medium;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +57,6 @@ public class ThreeSum {
 
         List<List<Integer>> list = sum.threeSum(nums);
 
-        list.stream()
-                .forEach(System.out::println);
+        list.forEach(System.out::println);
     }
 }
