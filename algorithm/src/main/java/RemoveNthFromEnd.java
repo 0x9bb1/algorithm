@@ -1,3 +1,5 @@
+package main.java;
+
 public class RemoveNthFromEnd {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
@@ -45,6 +47,16 @@ public class RemoveNthFromEnd {
         while (head != null) {
             System.out.println(head.val);
             head = head.next;
+        }
+    }
+
+    static class ListNode{
+        int val;
+
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
         }
     }
 

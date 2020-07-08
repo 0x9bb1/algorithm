@@ -1,3 +1,5 @@
+package main.java;
+
 import java.util.Stack;
 
 public class AddTwoNumbers {
@@ -71,13 +73,13 @@ public class AddTwoNumbers {
        addTwoNumbers(node1, node4);
     }
 
-}
+    public static class ListNode{
+        int val;
+        ListNode next;
 
-class ListNode{
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
+        ListNode(int x) {
+            val = x;
+        }
     }
+
 }

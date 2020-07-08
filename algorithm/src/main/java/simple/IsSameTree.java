@@ -1,8 +1,6 @@
 package main.java.simple;
 
-import javax.swing.tree.TreeNode;
 import java.util.Objects;
-import java.util.Stack;
 
 /**
  * 100. 相同的树
