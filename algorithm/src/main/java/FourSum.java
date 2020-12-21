@@ -59,14 +59,13 @@ public class FourSum {
     }
 
     public static void main(String[] args) {
-        List<List<Integer>> result = new ArrayList<>();
+        List<List<Integer>> result;
         FourSum fourSum = new FourSum();
         int[] nums = new int[]{1, 0, -1, 0, -2, 2};
         int target = 0;
 
         result = fourSum.fourSum(nums,target);
 
-        result.stream()
-                .forEach(System.out::println);
+        result.forEach(System.out::println);
     }
 }
