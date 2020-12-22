@@ -1,3 +1,5 @@
+package unknow;
+
 /**
  * 二分法
  */

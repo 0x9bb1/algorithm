@@ -1,13 +1,10 @@
-package main.java;
+package unknow;
 
 import java.util.*;
 
-/**
- * 递归回朔
- */
-public class CombinationSum {
+public class CombinationSum2 {
 
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
         int len = candidates.length;
         if (Objects.equals(0, len)) {
@@ -15,16 +12,16 @@ public class CombinationSum {
         }
         Arrays.sort(candidates);
         Deque<Integer> pre = new ArrayDeque<>();
-        this.combinationSum(res, target, 0, len, candidates, pre);
+        this.combinationSum2(res, target, 0, len, candidates, pre);
         return res;
     }
 
-    private void combinationSum(List<List<Integer>> res,
-                                int residue,
-                                int start,
-                                int len,
-                                int[] candidates,
-                                Deque<Integer> pre) {
+    private void combinationSum2(List<List<Integer>> res,
+                                 int residue,
+                                 int start,
+                                 int len,
+                                 int[] candidates,
+                                 Deque<Integer> pre) {
         if (Objects.equals(0, residue)) {
             List<Integer> tmp = new ArrayList<>(pre);
             Collections.sort(tmp);
@@ -33,11 +30,14 @@ public class CombinationSum {
         }
 
         for (int i = start; i < len && (residue - candidates[i] >= 0); i++) {
+            if (i > start && Objects.equals(candidates[i], candidates[i - 1])) {
+                continue;
+            }
             pre.push(candidates[i]);
-            this.combinationSum(
+            this.combinationSum2(
                     res,
                     residue - candidates[i],
-                    i,
+                    i + 1,
                     len,
                     candidates,
                     pre);
@@ -46,11 +46,11 @@ public class CombinationSum {
     }
 
     public static void main(String[] args) {
-        int[] candidates = {2, 3, 5};
+        int[] candidates = {10, 1, 2, 7, 6, 1, 5};
         int target = 8;
-        CombinationSum combinationSum = new CombinationSum();
-        List<List<Integer>> res = combinationSum
-                .combinationSum(candidates, target);
+        CombinationSum2 combinationSum2 = new CombinationSum2();
+        List<List<Integer>> res = combinationSum2
+                .combinationSum2(candidates, target);
         System.out.println(res.toString());
     }
 }

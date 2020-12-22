@@ -1,4 +1,4 @@
-package main.java.medium;
+package medium;
 
 /**
  * 55. 跳跃游戏

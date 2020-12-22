@@ -1,4 +1,4 @@
-import java.util.LinkedList;
+package unknow;
 
 public class ReverseList {
 
@@ -55,7 +55,7 @@ class Node1 {
 
     @Override
     public String toString() {
-        return "Node1{" +
+        return "unknow.Node1{" +
                 "value=" + value +
                 ", next=" + next +
                 '}';

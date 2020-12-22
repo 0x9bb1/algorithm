@@ -1,4 +1,4 @@
-package main.java.medium;
+package medium;
 
 /**
  * 316. 去除重复字母

@@ -1,4 +1,4 @@
-package main.java;
+package unknow;
 
 public class RemoveNthFromEnd {
 
